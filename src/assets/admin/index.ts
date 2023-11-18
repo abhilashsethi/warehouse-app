@@ -1,0 +1,15 @@
+export { default as apple_icon } from "./apple_icon.png";
+export { default as Apple_iphone_14Pro_Max } from "./Apple_iphone_14Pro_Max.png";
+export { default as Apple } from "./apple_logo.png";
+export { default as bt_earbuds } from "./bt_earbuds.png";
+export { default as buy_cancel_icon } from "./buy_cancel_icon.png";
+export { default as buy_completed_icon } from "./buy_completed_icon.png";
+export { default as buy_initiated_icon } from "./buy_initiated_icon.png";
+export { default as buy_received_icon } from "./buy_received_icon.png";
+export { default as car_charger } from "./car_charger.png";
+export { default as Huawei } from "./huawei_logo.png";
+export { default as mob_device } from "./mob_device.png";
+export { default as Motorola } from "./motorola_logo.png";
+export { default as portable_bt_speakers } from "./portable_bt_speakers.png";
+export { default as Samsung } from "./samsung_logo.png";
+export { default as st_watches } from "./smrt_watches.png";

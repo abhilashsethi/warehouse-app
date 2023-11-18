@@ -1,0 +1,65 @@
+import {
+	Category,
+	Create,
+	Info,
+	Badge,
+	Description,
+	CurrencyRupee,
+	Percent,
+	CalendarMonth,
+} from "@mui/icons-material";
+import * as Yup from "yup";
+
+const AddExpenseSchemas = [
+	{
+		key: "1",
+		// placeholder: 'Enter your name',
+		name: "category",
+		label: "Category *",
+		placeholder: "Enter invoice id",
+		styleContact: "rounded-xl overflow-hidden bg-white",
+		validationSchema: Yup.string().required("Invoice Id Required"),
+		initialValue: "",
+		icon: <Create />,
+		required: true,
+	},
+	{
+		key: "2",
+		// placeholder: 'Enter your name',
+		name: "amount",
+		label: "Amount *",
+		placeholder: "Enter Amount",
+		styleContact: "rounded-xl overflow-hidden bg-white",
+		validationSchema: Yup.string().required("Amount required"),
+		initialValue: "",
+		type: "number",
+		icon: <Badge />,
+		required: true,
+		contactField: {
+			xs: 12,
+			sm: 12,
+			md: 6,
+			lg: 6,
+		},
+	},
+	{
+		key: "3",
+		// placeholder: 'Enter your name',
+		name: "note",
+		label: "Note",
+		placeholder: "Enter Note",
+		styleContact: "rounded-xl overflow-hidden bg-white ",
+		validationSchema: Yup.string().optional(),
+		initialValue: "",
+		type: "text",
+		icon: <Description />,
+		required: true,
+		contactField: {
+			xs: 12,
+			sm: 12,
+			md: 6,
+			lg: 6,
+		},
+	},
+];
+export default AddExpenseSchemas;

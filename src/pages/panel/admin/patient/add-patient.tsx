@@ -87,34 +87,15 @@ const AddPatient = () => {
 												/>
 											</Avatar>
 										</Tooltip>
-										<Tooltip title="Delete">
-											<Avatar
-												variant="rounded"
-												className="!mr-0.5 !ml-0.5 !cursor-pointer !bg-red-500 !p-0"
-												sx={{
-													mr: "0.1vw",
-													padding: "0px !important",
-													backgroundColor: "Highlight",
-													cursor: "pointer",
-													color: "",
-													width: 30,
-													height: 30,
-												}}
-											>
-												<Delete
-													sx={{ padding: "0px !important" }}
-													fontSize="small"
-													// onClick={() => handleDelete(item?.id)}
-												/>
-											</Avatar>
-										</Tooltip>
 									</div>
 								</div>
 
 								<div className="px-4 bg-gradient-to-r from-rose-100 to-teal-100">
 									<div className="md:flex grid md:gap-2 py-1 md:py-0 justify-start">
-										<p className="text-sm md:text-sm text-gray-700">
-											<span>Warehouse Name :</span>
+										<p className="text-sm  md:text-sm text-gray-700">
+											<span className="font-semibold text-base">
+												Warehouse Name :{" "}
+											</span>
 											{item?.name}
 										</p>
 									</div>

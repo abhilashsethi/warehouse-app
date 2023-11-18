@@ -99,7 +99,7 @@ const MedicalRecords = () => {
 						className="!mt-2 text-theme font-bold"
 						sx={{ marginBottom: 3 }}
 					>
-						Medical Records
+						Add Warehouse
 					</Typography>
 
 					<Formik

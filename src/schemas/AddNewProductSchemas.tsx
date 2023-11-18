@@ -2,8 +2,13 @@ import {
 	Category,
 	CurrencyRupee,
 	Dns,
+	Group,
 	Info,
 	Inventory,
+	LocationCity,
+	Person,
+	SpaceBar,
+	VaccinesSharp,
 } from "@mui/icons-material";
 import * as Yup from "yup";
 
@@ -18,7 +23,7 @@ const AddNewProductSchemas = [
 		// type: "text",
 		validationSchema: Yup.string().required("Name is required"),
 		initialValue: "",
-		icon: <Category />,
+		icon: <Person />,
 		required: true,
 	},
 	{
@@ -31,7 +36,7 @@ const AddNewProductSchemas = [
 		type: "text",
 		validationSchema: Yup.string().required("contact number is required"),
 		initialValue: "",
-		icon: <Dns />,
+		icon: <LocationCity />,
 		required: true,
 	},
 
@@ -46,7 +51,7 @@ const AddNewProductSchemas = [
 		placeholder: "",
 		multiline: true,
 		required: true,
-		icon: <CurrencyRupee />,
+		icon: <Group />,
 	},
 	// {
 	// 	key: "4",

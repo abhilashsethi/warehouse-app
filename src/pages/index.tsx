@@ -11,6 +11,7 @@ import {
 	Footer,
 	GoToTop,
 	Hero,
+	Login,
 	OurClients,
 	OurProducts,
 	Testimonial,
@@ -26,18 +27,7 @@ const Home: NextPage = () => {
 
 	return (
 		<div>
-			<NewNav />
-			<Hero />
-			<OurProducts />
-			<hr />
-			<About />
-			<OurClients />
-			<hr />
-			<WhyUs />
-			<CounterPage />
-			<Testimonial />
-			<GoToTop />
-			<Footer />
+			<Login />
 		</div>
 	);
 };

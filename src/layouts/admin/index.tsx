@@ -54,7 +54,7 @@ const AdminLayout = ({ children, title = "YardHealth" }: Props) => {
 		router.push("/login");
 	};
 
-	console.log("jsfo", warehouse);
+	// console.log("jsfo", warehouse);
 	useEffect(() => {
 		const data = localStorage.getItem("warehouseData");
 		const warehouseData = data ? JSON.parse(data) : null;

@@ -15,6 +15,7 @@ import {
 	ReceiptLong,
 	Settings,
 	SettingsPhone,
+	Warehouse,
 } from "@mui/icons-material";
 import PersonIcon from "@mui/icons-material/Person";
 import { useRouter } from "next/router";
@@ -43,8 +44,8 @@ const useMenuItems = () => {
 
 				{
 					key: "4",
-					title: "Patient",
-					icon: <PersonIcon />,
+					title: "Warehouse",
+					icon: <Warehouse />,
 					submenus: [
 						{
 							key: "4.1",
@@ -54,28 +55,28 @@ const useMenuItems = () => {
 						},
 						{
 							key: "4.2",
-							title: "Add Patient",
+							title: "View All Warehouse",
 							icon: <PersonAddAlt1 />,
 							route: "/panel/admin/patient/add-patient",
 						},
-						{
-							key: "4.3",
-							title: "List Of Patients",
-							icon: <List />,
-							route: "/panel/admin/patient/list-of-patients",
-						},
+						// {
+						// 	key: "4.3",
+						// 	title: "List Of Patients",
+						// 	icon: <List />,
+						// 	route: "/panel/admin/patient/list-of-patients",
+						// },
 						{
 							key: "4.4",
-							title: "Medical Records",
+							title: "Add Warehouse",
 							icon: <NoteAlt />,
 							route: "/panel/admin/patient/medical-records",
 						},
-						{
-							key: "4.5",
-							title: "Generate Bills",
-							icon: <ReceiptLong />,
-							route: "/panel/admin/patient/generate-bills",
-						},
+						// {
+						// 	key: "4.5",
+						// 	title: "Generate Bills",
+						// 	icon: <ReceiptLong />,
+						// 	route: "/panel/admin/patient/generate-bills",
+						// },
 					],
 				},
 			];

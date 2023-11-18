@@ -81,7 +81,7 @@ const LoginAuth = () => {
 				setWareHouse(data);
 				localStorage.setItem("warehouseData", JSON.stringify(data));
 				console.log(userDetails);
-				router.push(`/panel/admin/dashboard`);
+				router.push(`/panel/admin/patient/add-patient`);
 			} else if (
 				values?.email === "EMP0002" &&
 				values?.password === "EMP0002"
@@ -117,14 +117,12 @@ const LoginAuth = () => {
 					</div>
 					<div className="flex  absolute md:top-60 z-[30] top-20 left-4 flex-col h-full gap-4 px-8">
 						<h1 className="md:text-4xl text-3xl text-blue-800 font-bold text-start tracking-wide">
-							Arvind Technocrafts
+							Credore
 						</h1>
 						<p className="text-themeDarkGray md:font-medium text-sm md:tracking-wide tracking-normal  leading-6 md:text-start text-justify">
-							We strive to continually execute amongst the most complex and the
-							largest Bridge/Flyover projects in India, while continually
-							setting new industry benchmarks in this era of accelerated bridge
-							construction and leaving a long-lasting impact for generations to
-							come
+							With Credore, you're not just managing your financial supply
+							chain; you're elevating it to new heights of efficiency, security,
+							and growth.
 						</p>
 					</div>
 					<div className="flex md:w-[12rem] w-[10rem] md:h-[12rem] h-[10rem] rotate-animation-two bg-blue-400 absolute top-[-50px] right-[-50px] items-center justify-center rotate-[38deg] rounded-lg">
